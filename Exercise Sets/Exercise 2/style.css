@@ -1,0 +1,123 @@
+/* General body styling */
+body {
+    background: linear-gradient(135deg, #d9c3a2 0%, #f5f5dc 100%); /* Khaki background */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Title styling */
+.title {
+    font-size: 48px; /* Increased size */
+    font-family: 'Poppins', sans-serif; /* Changed font */
+    font-weight: bold;
+    padding: 20px 40px;
+    background: linear-gradient(135deg, #7c4a2b, #f5f5dc); /* Brown to khaki gradient */
+    color: white; /* Text color */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent overlay */
+    z-index: -1;
+}
+
+/* Container styling */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    max-width: 1000px;
+    border: 2px solid #7c4a2b; /* Brown border */
+}
+
+/* Individual card styling */
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Add hover effect on the card */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Card title styling */
+.card h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #7c4a2b; /* Brown color */
+}
+
+/* Card paragraph styling */
+.card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Icon styling */
+.icon {
+    display: inline-block;
+    font-size: 50px; /* Increased icon size */
+    margin-bottom: 15px;
+    z-index: 1;
+    position: relative;
+    color: #fff; /* Default color */
+    border-radius: 50%; /* Circular background */
+    padding: 10px; /* Padding for the background */
+}
+
+/* Specific icon colors */
+.icon-user {
+    background-color: #c8a690; /* Brown */
+}
+
+.icon-mail {
+    background-color: #d8b000; /* Khaki */
+}
+
+.icon-heart {
+    background-color: #f44336; /* Red */
+}
+
+.icon-skills {
+    background-color: #4CAF50; /* Green */
+}
+
+.icon-places {
+    background-color: #FF5722; /* Orange */
+}
+
+.icon-education {
+    background-color: #9C27B0; /* Purple */
+}
